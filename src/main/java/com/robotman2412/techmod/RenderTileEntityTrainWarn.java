@@ -18,7 +18,7 @@ public class RenderTileEntityTrainWarn extends TileEntitySpecialRenderer {
 		texture = new ResourceLocation("tech_mod", "models/train_warn.png");
 		objModelLocation = new ResourceLocation("tech_mod", "models/trainwarn.obj");
 		model = AdvancedModelLoader.loadModel(objModelLocation);
-		//FIX DIS MMMMODDDDDLLLLLLLL CRAHPPPPPPPPPP!!!!!!!!!!!!!!
+		//FIX DIS MMMMODDDDDLLLLLLLL CRAHPPPPPPPPPP!!!!!!!!!!!
 	}
 
 	@Override

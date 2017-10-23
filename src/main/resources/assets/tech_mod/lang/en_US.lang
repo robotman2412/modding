@@ -1,0 +1,56 @@
+item.project_1.name=Primitive projector
+item.project_2.name=Mediate projector
+item.project_3.name=Advanced projector
+item.tin_grey.name=Grey tin
+item.tin_nugget.name=Tin nugget
+item.tin_ingot.name=Tin ingot
+item.silicon_etched_disk.name=Written silicon disk
+item.silicon_etched.name=Written silicon chip
+item.IC_1.name=DIP IC chip
+item.IC_2.name=PLCC IC chip
+item.IC_3.name=QFP IC chip
+item.carrier_DIP.name=DIP IC socket
+item.carrier_PLCC.name=PLCC IC socket
+item.insert_DIP.name=DIP IC in socket
+item.insert_PLCC.name=PLCC IC in socket
+item.PCB.name=PCB
+item.PCB_etched.name=Etched PCB
+item.PCB_processed.name=Processed PCB
+item.PCB_finished.name=Finished PCB
+item.PCB_finished_LC.name=Low quality finished PCB
+item.PCB_HC.name=High quality PCB
+item.PCB_etched_HC.name=High quality etched PCB
+item.PCB_processed_HC.name=High quality processed PCB
+item.PCB_finished_HC.name=High quality finished PCB
+item.silicon_dioxide.name=Silicon dioxide
+item.silicon_pure.name=Pure Silicon
+item.silicon_ingot.name=Silicon ingot
+item.silicon_disk.name=Silicon disk
+item.contact_DIP.name=DIP contact pin
+item.contact_SMD.name=SMD contact pin
+item.contact_PLCC.name=PLCC contact
+item.contact_F.name=Female pin
+item.contact_FTM.name=Female to male pin
+item.contact_M.name=Male pin
+
+item.tech_helmet.name=Tech helmet
+item.tech_chest.name=Tech chestplate
+item.tech_leggings.name=Tech leggings
+item.tech_boots.name=Tech boots
+
+item.aki.name=A.K.I.
+
+tile.project_bench.name=Project bench
+
+tile.tin_ore_1.name=Poor tin ore
+tile.tin_ore_2.name=Tin ore
+tile.tin_ore_3.name=Rich tin ore
+tile.tin_ore_4.name=Grey tin ore
+tile.silicon_ore.name=Silicon ore
+
+tile.holo_project_1.name=Primitive Hologram projector
+tile.holo_project_2.name=Mediate Hologram projector
+tile.holo_project_3.name=Advanced Hologram projector
+
+itemGroup.tabTechMod=RobotMan2412's tech mod
+itemGroup.tabTechModTrains=tech mod: trains

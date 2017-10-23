@@ -1,0 +1,6 @@
+.gradle
+.metadata
+eclipse/saves
+eclipse/logs
+eclipse/crash-reports
+bin/

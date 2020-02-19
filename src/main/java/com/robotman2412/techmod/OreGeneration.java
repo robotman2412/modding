@@ -1,13 +1,13 @@
 package com.robotman2412.techmod;
 
-import java.util.Random;
-
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+
+import java.util.Random;
 
 public class OreGeneration implements IWorldGenerator {
 	

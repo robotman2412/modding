@@ -33,6 +33,9 @@ item.contact_F.name=Female pin
 item.contact_FTM.name=Female to male pin
 item.contact_M.name=Male pin
 
+item.soldering_iron.name=Soldering iron
+item.soldering_iron_hot.name=Hot Soldering iron
+
 item.tech_helmet.name=Tech helmet
 item.tech_chest.name=Tech chestplate
 item.tech_leggings.name=Tech leggings

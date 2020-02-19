@@ -1,5 +1,7 @@
 package com.robotman2412.techmod;
 
+import com.robotman2412.techmod.blocks.RenderTileEntityTrainWarn;
+import com.robotman2412.techmod.blocks.TileEntityTrainWarn;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;

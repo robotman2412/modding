@@ -15,12 +15,12 @@ public class QualityHandler {
 	public String getStars(float quality) {
 		char blank_star = '\u2606';
 		char full_star = '\u2605';
-		String stars = "";
+		StringBuilder stars = new StringBuilder();
 		for (int i = 1; i < 6; i ++) {
-			if (quality / 2 >= i) stars += full_star;
-			else stars += blank_star;
+			if (quality / 2 >= i) stars.append(full_star);
+			else stars.append(blank_star);
 		}
-		return stars;
+		return stars.toString();
 	}
 	
 	public NBTTagCompound verifyNBT(NBTTagCompound verify, int structure) {
@@ -36,12 +36,11 @@ public class QualityHandler {
 	}
 	
 	NBTTagCompound NBTContact(NBTTagCompound verify) {
-		NBTTagCompound NBT = verify;
-		NBTTagCompound techNBT = NBT.getCompoundTag("techNBT");
+		NBTTagCompound techNBT = verify.getCompoundTag("techNBT");
 		NBTTagCompound qualityNBT = techNBT.getCompoundTag("qualityNBT");
-		NBTTagCompound displayNBT = NBT.getCompoundTag("display");
-		boolean correct = true;
-		if (correct &= NBT.hasKey("techNBT")) System.out.println("found techNBT");
+		NBTTagCompound displayNBT = verify.getCompoundTag("display");
+		boolean correct;
+		if (correct = verify.hasKey("techNBT")) System.out.println("found techNBT");
 		if (correct &= techNBT.hasKey("qualityNBT")) System.out.println("found qualityNBT");
 		if (correct &= qualityNBT.hasKey("plastic")) System.out.println("found metal");
 		if (correct &= qualityNBT.hasKey("mold")) System.out.println("found mold");
@@ -56,7 +55,7 @@ public class QualityHandler {
 			avg /= 2;
 			qualityNBT.setFloat("average", avg);
 			techNBT.setTag("qualityNBT", qualityNBT);
-			NBT.setTag("techNBT", techNBT);
+			verify.setTag("techNBT", techNBT);
 			System.out.println("fixed corrupt NBT!");
 		}
 		NBTTagList lore = new NBTTagList();
@@ -69,17 +68,16 @@ public class QualityHandler {
 		lore.appendTag(line3);
 		lore.appendTag(line4);
 		displayNBT.setTag("Lore", lore);
-		NBT.setTag("display", displayNBT);
-		return NBT;
+		verify.setTag("display", displayNBT);
+		return verify;
 	}
 	
 	NBTTagCompound NBTCarry(NBTTagCompound verify) {
-		NBTTagCompound NBT = verify;
-		NBTTagCompound techNBT = NBT.getCompoundTag("techNBT");
+		NBTTagCompound techNBT = verify.getCompoundTag("techNBT");
 		NBTTagCompound qualityNBT = techNBT.getCompoundTag("qualityNBT");
-		NBTTagCompound displayNBT = NBT.getCompoundTag("display");
-		boolean correct = true;
-		if (correct &= NBT.hasKey("techNBT")) System.out.println("found techNBT");
+		NBTTagCompound displayNBT = verify.getCompoundTag("display");
+		boolean correct;
+		if (correct = verify.hasKey("techNBT")) System.out.println("found techNBT");
 		if (correct &= techNBT.hasKey("qualityNBT")) System.out.println("found qualityNBT");
 		if (correct &= qualityNBT.hasKey("contact")) System.out.println("found contact");
 		if (correct &= qualityNBT.hasKey("plastic")) System.out.println("found plastic");
@@ -97,7 +95,7 @@ public class QualityHandler {
 			avg /= 3;
 			qualityNBT.setFloat("average", avg);
 			techNBT.setTag("qualityNBT", qualityNBT);
-			NBT.setTag("techNBT", techNBT);
+			verify.setTag("techNBT", techNBT);
 			System.out.println("fixed corrupt NBT!");
 		}
 		NBTTagList lore = new NBTTagList();
@@ -112,17 +110,16 @@ public class QualityHandler {
 		lore.appendTag(line4);
 		lore.appendTag(line5);
 		displayNBT.setTag("Lore", lore);
-		NBT.setTag("display", displayNBT);
-		return NBT;
+		verify.setTag("display", displayNBT);
+		return verify;
 	}
 	
 	NBTTagCompound NBTInsert(NBTTagCompound verify) {
-		NBTTagCompound NBT = verify;
-		NBTTagCompound techNBT = NBT.getCompoundTag("techNBT");
+		NBTTagCompound techNBT = verify.getCompoundTag("techNBT");
 		NBTTagCompound qualityNBT = techNBT.getCompoundTag("qualityNBT");
-		NBTTagCompound displayNBT = NBT.getCompoundTag("display");
-		boolean correct = true;
-		if (correct &= NBT.hasKey("techNBT")) System.out.println("found techNBT");
+		NBTTagCompound displayNBT = verify.getCompoundTag("display");
+		boolean correct;
+		if (correct = verify.hasKey("techNBT")) System.out.println("found techNBT");
 		if (correct &= techNBT.hasKey("qualityNBT")) System.out.println("found qualityNBT");
 		if (correct &= qualityNBT.hasKey("contact")) System.out.println("found contact");
 		if (correct &= qualityNBT.hasKey("plastic")) System.out.println("found plastic");
@@ -152,7 +149,7 @@ public class QualityHandler {
 			avg /= 3;
 			qualityNBT.setFloat("average", avg);
 			techNBT.setTag("qualityNBT", qualityNBT);
-			NBT.setTag("techNBT", techNBT);
+			verify.setTag("techNBT", techNBT);
 			System.out.println("fixed corrupt NBT!");
 		}
 		NBTTagList lore = new NBTTagList();
@@ -183,8 +180,8 @@ public class QualityHandler {
 		lore.appendTag(line12);
 		lore.appendTag(line13);
 		displayNBT.setTag("Lore", lore);
-		NBT.setTag("display", displayNBT);
-		return NBT;
+		verify.setTag("display", displayNBT);
+		return verify;
 	}
 	
 }
